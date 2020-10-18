@@ -1,0 +1,11 @@
+/* 
+    Project 3
+    Marc Picornell
+    18 oct 2020
+    marc [at] marcpicornell.com
+    You like it :-) say hi!
+*/
+.container
+    {
+        display: flex;
+    }
