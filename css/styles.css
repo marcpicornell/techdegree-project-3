@@ -5,7 +5,103 @@
     marc [at] marcpicornell.com
     You like it :-) say hi!
 */
-.container
+* 
+    {
+        box-sizing: border-box;
+        margin: 2px;
+        padding: 0;
+    }
+
+h1,
+h2
+    {
+        text-align: center;
+    }
+
+h1 
+    {
+        font-size: 1.1em;
+        background-color: #2d3945;
+        color: white;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+
+p 
+    {
+        text-align: center;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+h2 
+    {
+        font-size: 1.0em;
+    }
+
+h3  
+    {
+        text-align: left;
+    }
+
+li 
+    {
+        list-style: none;
+    }
+
+button 
+    {
+        background-color: teal;
+        color: white;
+        padding: 10px 30px;
+        width: 100%;
+    }
+footer 
+    {
+        font-size: 0.7em;
+        text-align: center;
+        opacity: 0.6;
+        margin-top: 20px;
+    }
+label,
+legend,
+p,
+.newsletters,
+.format,
+.topics
+    {
+        color: gray;
+        font-size: 0.8em;
+    }
+/*
+    ########################################
+    #####           CLASS              #####
+    ########################################
+*/
+.form_contact 
     {
         display: flex;
+        flex-direction: column;
+    }
+
+.form_contact li 
+    {
+        display: flex;
+        flex-direction: column;
+    
+    }
+.newsletters,
+.format 
+    {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+.topic
+    {
+        width: 100%;
+    }
+
+#zip_code
+    {
+        width: 15%;
     }
