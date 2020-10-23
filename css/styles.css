@@ -43,6 +43,22 @@ h3
         text-align: left;
     }
 
+li input,
+li select
+    {
+        height: 30px;
+        background-color: lightgrey;
+    }
+
+input:focus,
+textarea:focus
+    { 
+        background-color: lightseagreen;
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-delay: 0.1s;
+    }
+
 li 
     {
         list-style: none;
@@ -53,6 +69,7 @@ button
         background-color: teal;
         color: white;
         padding: 10px 30px;
+        margin-left: 3px;
         width: 100%;
     }
 footer 
@@ -71,6 +88,13 @@ p,
     {
         color: gray;
         font-size: 0.8em;
+    }
+
+textarea 
+    {
+        margin: 0;
+        padding: 0;
+        background-color: lightgrey;
     }
 /*
     ########################################
@@ -100,8 +124,47 @@ p,
     {
         width: 100%;
     }
+ 
+.part1
+    {
+        border-radius: 8px;
+        background-color: linen;
+        z-index: auto;
+    }
+
+.hr_contact 
+    {
+        border-top: 2px double black;
+        border-bottom: 1px solid black;
+    }
+
+.hr_newsletter
+    {
+        border-top: 1.5px solid black;
+    }
 
 #zip_code
     {
-        width: 15%;
+        width: 25%;
+    }
+
+@media screen and (min-width: 769px)
+    {  
+       .container 
+        {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin: auto;
+            align-content: center;
+        }
+
+
+
+
+
+
+
+
+
     }
