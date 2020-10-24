@@ -149,6 +149,11 @@ textarea
         text-align: right;
     }
 
+::placeholder
+    {
+        text-align: right;
+    }
+
 #zip_code
     {
         width: 25%;
