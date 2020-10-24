@@ -144,6 +144,11 @@ textarea
         border-top: 1.5px solid black;
     }
 
+:required 
+    {
+        text-align: right;
+    }
+
 #zip_code
     {
         width: 25%;
@@ -153,19 +158,22 @@ textarea
     {  
        .container 
         {
-            display: flex;
-            flex-direction: column;
             width: 70%;
             margin: auto;
-            align-content: center;
         }
+        .form_contact li
+            {
+                display: flex;
+                flex-direction: row;
+            }
+        .form_contact label
+            {
+                flex-basis: 20%;
+            }
 
-
-
-
-
-
-
-
-
+            .form_contact input
+            {   
+                flex-grow: 1;
+                flex-basis: auto;
+            }
     }
