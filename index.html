@@ -32,7 +32,7 @@
         <h2>
           Signup for our newsletter
         </h2>
-        <p>
+        <p class="slogan">
           Get the latest news on how your code is doing right in your inbox
         </p>
         <hr class="hr_contact">
@@ -41,9 +41,9 @@
         
         <form action="https://www.teamtreehouse.com" method="get" class="form">
           <fieldset class="part1">
-          <h3>
+          <legend class="contact">
             Contact information
-          </h3>
+          </legend>
             <ul class="form_contact">
 
               <!-- FULL NAME -->
@@ -158,14 +158,13 @@
             </ul>
           </fieldset>
           <hr class="hr_newsletter">
-          <h3>
-            Newsletter
-          </h3>
-
           <fieldset class="part2">
-            <legend class="newsletters">
-              Select the newsletters you would like to receive
+            <legend>
+              Newsletter
             </legend>
+            <p class="newsletters"> 
+              Select the newsletters you would like to receive
+            </p>
             <input type="checkbox" id="html_news" value="interest_html_news" name="interest">
               <label for="html_news">
                 HTML News
@@ -195,10 +194,9 @@
               Plain text
             </label>
             <br>
-          <p class="topics">
-            Other topics you'd like to hear about
-          </p>
-            <label for="topic"></label>
+            <label for="topic">
+              Other topics you'd like to hear about
+            </label>
             <textarea name="topic" id="topic" class="topic" rows="6"></textarea>
         </fieldset>
 

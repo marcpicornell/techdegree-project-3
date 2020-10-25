@@ -30,9 +30,7 @@ h1
 
 p 
     {
-        text-align: center;
-        padding-left: 35px;
-        padding-right: 35px;
+        text-align: left;
     }
 h2 
     {
@@ -47,8 +45,16 @@ h3
 li input,
 li select
     {
+        margin: 0;
+        padding: 0;
+        border: 1px;
         height: 30px;
         background-color: lightgrey;
+    }
+
+.part1>legend
+    {
+        color: #222222;
     }
 
 input:focus,
@@ -70,7 +76,6 @@ button
         background-color: teal;
         color: white;
         padding: 10px 30px;
-        margin-left: 3px;
         width: 100%;
     }
 footer 
@@ -81,11 +86,10 @@ footer
         margin-top: 20px;
     }
 label,
-legend,
 p,
 .newsletters,
 .format,
-.topics
+.topic
     {
         color: gray;
         font-size: 0.8em;
@@ -97,11 +101,23 @@ textarea
         padding: 0;
         background-color: lightgrey;
     }
+
+legend
+    {
+        font-weight: bolder;
+    }
 /*
     ########################################
     #####           CLASS              #####
     ########################################
 */
+.slogan
+    {
+        text-align: center;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
 .form_contact 
     {
         display: flex;
@@ -119,14 +135,17 @@ textarea
     {
         padding-bottom: 5px;
         padding-top: 5px;
+        text-align: left;
     }
 
 .topic
     {
         width: 100%;
+        text-align: left;
     }
  
-.part1
+.part1,
+.part2
     {
         border-radius: 8px;
         background-color: linen;
@@ -156,10 +175,10 @@ textarea
 
 #zip_code
     {
-        width: 25%;
+        width: 50%;
     }
 
-@media screen and (min-width: 769px)
+@media screen and (min-width: 768px)
     {  
        .container 
         {
@@ -176,9 +195,19 @@ textarea
                 flex-basis: 20%;
             }
 
-            .form_contact input
+        .form_contact input
             {   
                 flex-grow: 1;
                 flex-basis: auto;
             }
+        #zip_code
+            {
+                max-width: 25%;
+            }
+
+        li select 
+        {
+            flex-grow: 1;
+        }
+
     }
